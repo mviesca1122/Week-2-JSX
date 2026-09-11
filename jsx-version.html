@@ -57,9 +57,14 @@
                 title: 'Hobby',
                 price: 'Free',
                 includesText: 'Includes:',
-                features: ['No credit card required', 'Limited Agent requests', 'Limited Tab completions'],
-                buttonText: 'Download',
-                buttonVariant: 'secondary',
+                features: ['No credit card required', 
+                    'Limited Agent requests', 
+                    'Limited Tab completions',
+                    'Background Agents',
+                    'Maximum context windows',
+                ],
+                buttonText: 'Start for free',
+                buttonVariant: 'tertiary',
             };
             const proPlan = {
                 title: 'Pro',
@@ -72,6 +77,19 @@
                     'Maximum context windows',
                 ],
                 buttonText: 'Get Pro',
+                buttonVariant: 'secondary',
+            };
+            const proPlusPlan = {
+                title: 'Pro Plus',
+                price: '$40/mo.',
+                includesText: 'Everything in Pro, plus:',
+                features: [
+                    'Extended limits on Agent',
+                    'Unlimited Tab completions',
+                    'Background Agents',
+                    'Maximum context windows',
+                ],
+                buttonText: 'Get Pro Plus',
                 buttonVariant: 'primary',
             };
 
@@ -84,6 +102,7 @@
                         {/* This is the same as writing: title="Hobby" price="Free" includesText="Includes:" etc. */}
                         <PricingCard {...hobbyPlan} />
                         <PricingCard {...proPlan} />
+                        <PricingCard {...proPlusPlan} />
                     </div>
                 </>
             );
