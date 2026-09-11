@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Page metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans — HTML version</title>
+
+    <!-- Fonts: Inter (400–700) loaded from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet: all visual styling lives in styles.css -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Version badge — fixed label at top of page (see .page-label in CSS) -->
     <p class="page-label"><strong>HTML version</strong> — static markup</p>
+
+    <!-- Pricing cards row — holds all plan cards side by side -->
     <div class="cards-container">
+
+        <!-- Card: Hobby plan -->
         <div class="card">
             <div class="card-top">
+                <!-- Plan name -->
                 <h3 class="card-title">Hobby</h3>
+
+                <!-- Price display — amount only (no period for free tier) -->
                 <p class="card-price">
                     <span class="card-price-amount">Free</span>
                 </p>
+
+                <!-- Feature list section -->
                 <div class="card-content">
                     <p class="includes-text">Includes:</p>
                     <ul class="features-list">
@@ -36,15 +52,24 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- CTA button — secondary style (light gray) -->
             <button class="download-button secondary">Download</button>
         </div>
+
+        <!-- Card: Pro plan -->
         <div class="card">
             <div class="card-top">
+                <!-- Plan name -->
                 <h3 class="card-title">Pro</h3>
+
+                <!-- Price display — amount + billing period -->
                 <p class="card-price">
                     <span class="card-price-amount">$20</span>
                     <span class="card-price-period">/mo.</span>
                 </p>
+
+                <!-- Feature list section -->
                 <div class="card-content">
                     <p class="includes-text">Everything in Hobby, plus:</p>
                     <ul class="features-list">
@@ -67,8 +92,90 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- CTA button — primary style (dark, emphasized) -->
             <button class="download-button primary">Get Pro</button>
         </div>
+
+        <!-- Card: Pro Plus plan -->
+        <div class="card">
+            <div class="card-top">
+                <!-- Plan name -->
+                <h3 class="card-title">Pro Plus</h3>
+
+                <!-- Price display — amount + billing period -->
+                <p class="card-price">
+                    <span class="card-price-amount">$40</span>
+                    <span class="card-price-period">/mo.</span>
+                </p>
+
+                <!-- Feature list section -->
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Extended limits on Agent
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Unlimited Tab completions
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Background Agents
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Maximum context windows
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA button — primary style (dark, emphasized) -->
+            <button class="download-button primary">Get Pro Plus</button>
+        </div>
+
+        <!-- Card: Enterprise plan — copy this block to add another card -->
+        <div class="card">
+            <div class="card-top">
+                <!-- Plan name -->
+                <h3 class="card-title">Enterprise</h3>
+
+                <!-- Price display — custom pricing (no fixed amount) -->
+                <p class="card-price">
+                    <span class="card-price-amount">Custom</span>
+                </p>
+
+                <!-- Feature list section -->
+                <div class="card-content">
+                    <p class="includes-text">Everything in Pro, plus:</p>
+                    <ul class="features-list">
+                        <li>
+                            <span class="checkmark">✓</span>
+                            SSO and SAML
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Dedicated account manager
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Priority support and SLAs
+                        </li>
+                        <li>
+                            <span class="checkmark">✓</span>
+                            Advanced admin and team controls
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA button — secondary style (light gray) -->
+            <button class="download-button secondary">Contact sales</button>
+        </div>
+
     </div>
 </body>
 </html>
